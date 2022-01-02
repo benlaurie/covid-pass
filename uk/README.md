@@ -59,6 +59,8 @@ The contents of the `d` section are:
 
 ## Some Observations
 
-- Although the `ci` field is supposed to be unique per vaccination (at least in EU passes), the UK uses the same ID for all vaccines in EU passes.
+- Although the `ci` field is supposed to be unique per vaccination (at least in EU passes), the UK uses the same ID for all vaccines in international passes.
 - I have seen UK Domestic passes where the wrapper dates are reversed - meaning they can never be valid.
   - However, the NHS COVID Pass Verifier still verifies them.
+- Sometimes the numeric keys appear as numbers, sometimes as strings.
+- For no obvious reason boosters (or third vaccinations) seem to appear in their own domestic certificate, unlike doses 1 and 2 which appear in the same certificate.
