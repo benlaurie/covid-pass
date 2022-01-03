@@ -57,6 +57,10 @@ The contents of the `d` section are:
 | `pm` | *UNKNOWN* (let me know if you know!) |
 | `po` | A list of vaccinations in the format `GB-ENG:n` where `n` is the sequence number of the vaccination |
 
+## Historic UK Domestic Pass Format
+
+Prior to somewhere around October 2021, the UK Domestic pass consisted of three base 64 encoded strings, separated by `.`s. The first is the key ID, the second is version + expiry (yyMMddHHmm) + name (where '+' is concatenation) and the third is a signature.
+
 ## Some Observations
 
 - Although the `ci` field is supposed to be unique per vaccination (at least in EU passes), the UK uses the same ID for all vaccines for the same person in international passes.
