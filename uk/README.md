@@ -59,7 +59,7 @@ The contents of the `d` section are:
 
 ## Historic UK Domestic Pass Format
 
-Prior to somewhere around October 2021, the UK Domestic pass consisted of three base 64 encoded strings, separated by `.`s. The first is the key ID, the second is version + expiry (yyMMddHHmm) + name (where '+' is concatenation) and the third is a signature.
+Prior to somewhere around October 2021, the UK Domestic pass consisted of three base 64 encoded strings, separated by `.`s. The first is the key ID, the second is version? ('1') + expiry (yyMMddHHmm) + name (where '+' is concatenation) and the third is a signature.
 
 ## Some Observations
 
