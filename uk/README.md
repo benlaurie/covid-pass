@@ -54,8 +54,16 @@ The contents of the `d` section are:
 | `df` | The start date |
 | `du` | The end date |
 | `is` | The issuer |
-| `pm` | *UNKNOWN* (let me know if you know!) |
+| `pm` | *UNKNOWN* (let me know if you know! Values seen so far: `120`, `123`, `8`) |
 | `po` | A list of vaccinations in the format `GB-ENG:n` where `n` is the sequence number of the vaccination |
+
+## Scottish Domestic Pass
+
+The Scottish pass follows the same format, but
+- The `co`, `dob` and `nam` fields are not filled in.
+- `po` of `GB-SCT:1` (I am guessing combined with a `pm` of `8`) seems to mean "boosted".
+- `df` and `du` do not include time.
+- The validity period is (currently) 3 days instead of a month.
 
 ## Historic UK Domestic Pass Format
 
