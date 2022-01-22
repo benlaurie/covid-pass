@@ -58,7 +58,7 @@ The contents of the `d` section are:
 | `df` | The start date |
 | `du` | The end date |
 | `is` | The issuer |
-| `pm` | "Policy mask" - a (more) detailed list of criteria met (let me know if you know more! Values seen so far: `120`, `123`, `8`)[1] |
+| `pm` | "Policy mask" - a bitmask of criteria met (let me know if you know more! Bits seen so far: 64, 32, 16, 8, 2, 1)[1] |
 | `po` | A list of polices the subject met the criteria for at the time of vaccinations (see below) |
 
 [1] NHSX say this field is unused (presumably by verifiers, since it most certainly is used in passes) and will be phased out.
